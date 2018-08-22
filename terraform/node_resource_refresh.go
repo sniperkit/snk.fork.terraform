@@ -255,6 +255,7 @@ func (n *NodeRefreshableManagedResourceInstance) evalTreeManagedResourceNoState(
 				Addr:           addr.Resource,
 				Config:         n.Config,
 				Provider:       &provider,
+				ProviderAddr:   n.ResolvedProvider,
 				ProviderSchema: &providerSchema,
 				State:          &state,
 				OutputChange:   &change,
